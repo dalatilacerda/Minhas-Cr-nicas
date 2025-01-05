@@ -21,7 +21,7 @@
 
     header {
       text-align: center;
-      padding: 30px 15px;
+      padding: 20px 15px;
       background-color: #3b3b3b;
       border-bottom: 3px solid #555;
       width: 100%;
@@ -29,14 +29,14 @@
 
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
-      letter-spacing: 2px;
+      font-size: 2rem;
+      letter-spacing: 1.5px;
     }
 
     main {
       width: 90%;
       max-width: 800px;
-      margin: 30px auto;
+      margin: 20px auto;
       padding: 20px;
       background-color: #444;
       border-radius: 10px;
@@ -44,17 +44,24 @@
     }
 
     main h2 {
-      font-size: 2rem;
+      font-size: 1.8rem;
       margin-bottom: 20px;
       color: #f5f5f5;
       text-align: center;
     }
 
     main p {
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin-bottom: 15px;
       color: #ccc;
       text-align: justify;
+    }
+
+    main .author {
+      margin-top: 30px;
+      text-align: right;
+      font-size: 1rem;
+      color: #aaa;
     }
 
     a {
@@ -72,6 +79,25 @@
     a:hover {
       background-color: #495057;
     }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      main h2 {
+        font-size: 1.5rem;
+      }
+
+      main p {
+        font-size: 0.9rem;
+      }
+
+      a {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -81,13 +107,13 @@
   <main>
     <h2>Título da Crônica</h2>
     <p>
-      Aqui você pode escrever sua crônica. Substitua este texto no código HTML com o conteúdo da crônica. 
-      Este é apenas um exemplo para visualização.
+      Este é o espaço onde você pode exibir o conteúdo da sua crônica. Substitua este texto no código HTML pelo texto da crônica.
     </p>
     <p>
-      Adicione mais parágrafos conforme necessário, utilizando as tags HTML. Este espaço é dedicado exclusivamente para o texto da crônica.
+      Você pode adicionar quantos parágrafos desejar para compor sua narrativa, garantindo que a leitura seja confortável.
     </p>
     <a href="index.html">Voltar</a> <!-- Botão de voltar -->
+    <p class="author">Autor: Seu Nome</p>
   </main>
 </body>
 </html>
